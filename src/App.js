@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { Wishlist } from './Wishlist';
+import pic4 from './pic4.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-general">
+      
+         <div className="container-top">
+            <h1 className="header">Wish List</h1>
+            <img className="pic4" src={pic4} alt="pic" width="400px" />
+          </div>
+          
+          <div>
+
+          <Wishlist />
+          </div>
+      
+
     </div>
   );
 }

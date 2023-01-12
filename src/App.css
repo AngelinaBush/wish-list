@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+.clicked {
+  background-color: #FFF9F9; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #D9D7F1;
+}
+.container-general {
+  min-height: 90vh;
+  background-color: #FFFDDE;
+  width:500px;
+  padding: 20px;
+  margin:20px auto;
+  z-index:-1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-top {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  position: relative;
+  font-size: 40px;
+  font-family: 'Indie Flower', cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pic4 {
+  position: absolute;
+  top: 15%;
+  z-index:0;
+  opacity: 0.3;
+}
+
+.wishlist {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.container-input {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  font-family: 'Indie Flower', cursive;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  position: relative;
+}
+
+.btn {
+  padding: 8px;
+  width:30%;
+  font-size: 15px;
+  border: none;
+  font-weight: 300;
+  font-family: 'Indie Flower', cursive;
+}
+
+.add {
+  background-color: #ADA2FF;
+  border: 1px solid #FFF6BD;
+}
+
+.delete {
+  background-color: #FFF6BD; 
+  border: 1px solid #ADA2FF;
+}
+
+ul, li {
+  position: relative;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  list-style-type: decimal;
+}
+
+.question {
+  font-size: 22px;
+  font-family: 'Indie Flower', cursive;
+}
+
+
+@media all and (max-width: 500px) {
+
+  .container-general {
+      width:350px;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+@media all and (max-width: 380px) {
+
+  .container-general {
+      width:320px;
+      padding:10px;
+  }
+
+  .pic4 {
+    width: 300px;
+  }
+  
+  .header {
+    font-size: 35px;
   }
 }
